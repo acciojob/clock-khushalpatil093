@@ -13,7 +13,7 @@ function updateClock(){
 	const month = currentDate.toLocaleString('default', { month: 'long'});
 	const dayInMonth = currentDate.getDate();
 	const year = currentDate.getFullYear();
-	const formattedDate = `${dayOfWeek}, ${month} ${dayInMonth}, ${year}`;
+	const formattedDate = `${month}/${dayInMonth}/${year},`;
 
 	timeElement.innerHtml = `${formattedDate} ${formattedTime}`;
 }
